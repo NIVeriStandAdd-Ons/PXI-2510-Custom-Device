@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Custom Device.xsd">
+  <XSDVersion Major="2010" Minor="0" Fix="0" Build="0" />
+  <AddMenu>
+    <eng>FIU::PXI-2510</eng>
+    <loc>FIU::PXI-2510</loc>
+  </AddMenu>
+  <Version>1.0.0</Version>
+  <Type>Inline HW Interface</Type>
+  <MaxOccurrence>1</MaxOccurrence>
+  <MainPageGUID>1d96ea35-2726-401d-a052-f61bcf1a45df</MainPageGUID>
+  <InitializationVI>
+    <Type>Action</Type>
+    <Item2Launch>
+      <Type>To Common Doc Dir</Type>
+      <Path>Custom Devices\PXI-2510\Windows\PXI-2510 Configuration.llb\Initialization VI.vi</Path>
+    </Item2Launch>
+  </InitializationVI>
+  <CustomDeviceVI>
+    <SourceDistribution>
+      <Source>
+        <SupportedTarget>Windows</SupportedTarget>
+        <Source>
+          <Type>To Common Doc Dir</Type>
+          <Path>Custom Devices\PXI-2510\Windows\PXI-2510 Engine Windows.llb\RT Driver VI.vi</Path>
+        </Source>
+        <RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\PXI-2510\PXI-2510 Engine Windows.llb\RT Driver VI.vi</RealTimeSystemDestination>
+      </Source>
+      <Source>
+        <SupportedTarget>Pharlap</SupportedTarget>
+        <Source>
+          <Type>To Common Doc Dir</Type>
+          <Path>Custom Devices\PXI-2510\PharLap\PXI-2510 Engine Pharlap.llb\RT Driver VI.vi</Path>
+        </Source>
+        <RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\PXI-2510\PXI-2510 Engine Pharlap.llb\RT Driver VI.vi</RealTimeSystemDestination>
+      </Source>
+      <Source>
+        <SupportedTarget>Linux_x64</SupportedTarget>
+        <Source>
+          <Type>To Common Doc Dir</Type>
+          <Path>Custom Devices\PXI-2510\Linux_x64\PXI-2510 Engine Linux64.llb\RT Driver VI.vi</Path>
+        </Source>
+        <RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\PXI-2510\PXI-2510 Engine Linux64.llb\RT Driver VI.vi</RealTimeSystemDestination>
+      </Source>
+    </SourceDistribution>
+  </CustomDeviceVI>
+  <Dependencies />
+  <Pages>
+    <Page>
+      <Name>
+        <eng>PXI-2510</eng>
+        <loc>PXI-2510</loc>
+      </Name>
+      <GUID>1d96ea35-2726-401d-a052-f61bcf1a45df</GUID>
+      <Glyph>
+        <Type>To Application Data Dir</Type>
+        <Path>System Explorer\Glyphs\default fpga category.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\PXI-2510\Windows\PXI-2510 Configuration.llb\Main Page.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>b41e6597-59ac-42cc-ad93-83efd98d2788</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Disable</eng>
+            <loc>Disable</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\PXI-2510\Windows\PXI-2510 Configuration.llb\EnableDisable Main Page.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>f3147e15-5148-4ccd-b4fd-be180a6bbc6e</GUID>
+          <Type>Action</Type>
+          <Execution>silent</Execution>
+          <Name>
+            <eng>Export Configuration</eng>
+            <loc>Export Configuration</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\PXI-2510\Windows\PXI-2510 Configuration.llb\Export Configuration RTM.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
+      <ButtonList>
+        <Button>
+          <ID>f3147e15-5148-4ccd-b4fd-be180a6bbc6e-Button</ID>
+          <Glyph>
+            <Type>To Application Data Dir</Type>
+            <Path>System Explorer\Glyphs\Export.png</Path>
+          </Glyph>
+          <Type>Action</Type>
+          <ReferencedGUID>f3147e15-5148-4ccd-b4fd-be180a6bbc6e</ReferencedGUID>
+          <ButtonText>
+            <eng>Export Configuration</eng>
+            <loc>Export Configuration</loc>
+          </ButtonText>
+          <Caption>
+            <eng>Export Configuration</eng>
+            <loc>Export Configuration</loc>
+          </Caption>
+          <TipStrip>
+            <eng>Export Custom Device Configuration</eng>
+            <loc>Export Custom Device Configuration</loc>
+          </TipStrip>
+          <Documentation>
+            <eng>Export Custom Device Configuration</eng>
+            <loc>Export Custom Device Configuration</loc>
+          </Documentation>
+        </Button>
+      </ButtonList>
+      <ActionVIOnCompile>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\PXI-2510\Windows\PXI-2510 Configuration.llb\ActionVIOnCompile.vi</Path>
+      </ActionVIOnCompile>
+    </Page>
+    <Page>
+      <Name>
+        <eng>PXI-2510</eng>
+        <loc>PXI-2510</loc>
+      </Name>
+      <GUID>865bd9fa-a155-4566-879d-0834230785a3</GUID>
+      <Glyph>
+        <Type>To Application Data Dir</Type>
+        <Path>System Explorer\Glyphs\fpga device_disabled.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\PXI-2510\Windows\PXI-2510 Configuration.llb\Main Page.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>b41e6597-59ac-42cc-ad93-83efd98d2788</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Enable</eng>
+            <loc>Enable</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\PXI-2510\Windows\PXI-2510 Configuration.llb\EnableDisable Main Page.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>f3147e15-5148-4ccd-b4fd-be180a6bbc6e</GUID>
+          <Type>Action</Type>
+          <Execution>silent</Execution>
+          <Name>
+            <eng>Export Configuration</eng>
+            <loc>Export Configuration</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\PXI-2510\Windows\PXI-2510 Configuration.llb\Export Configuration RTM.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
+      <ButtonList>
+        <Button>
+          <ID>f3147e15-5148-4ccd-b4fd-be180a6bbc6e-Button</ID>
+          <Glyph>
+            <Type>To Application Data Dir</Type>
+            <Path>System Explorer\Glyphs\Export.png</Path>
+          </Glyph>
+          <Type>Action</Type>
+          <ReferencedGUID>f3147e15-5148-4ccd-b4fd-be180a6bbc6e</ReferencedGUID>
+          <ButtonText>
+            <eng>Export Configuration</eng>
+            <loc>Export Configuration</loc>
+          </ButtonText>
+          <Caption>
+            <eng>Export Configuration</eng>
+            <loc>Export Configuration</loc>
+          </Caption>
+          <TipStrip>
+            <eng>Export Custom Device Configuration</eng>
+            <loc>Export Custom Device Configuration</loc>
+          </TipStrip>
+          <Documentation>
+            <eng>Export Custom Device Configuration</eng>
+            <loc>Export Custom Device Configuration</loc>
+          </Documentation>
+        </Button>
+      </ButtonList>
+      <ActionVIOnCompile>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\PXI-2510\Windows\PXI-2510 Configuration.llb\ActionVIOnCompile.vi</Path>
+      </ActionVIOnCompile>
+    </Page>
+<Page>
+      <Name>
+        <eng>PXI-2510 Fault Bus Page</eng>
+        <loc>PXI-2510 Fault Bus Page</loc>
+      </Name>
+      <GUID>1ca83dac-4ca4-4634-b3f6-f8ba7047293d</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\default fpga channel.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\PXI-2510\Windows\PXI-2510 Configuration.llb\PXI-2510 Fault Bus Page.vi</Path>
+      </Item2Launch>
+    </Page>
+<Page>
+      <Name>
+        <eng>PXI-2510 Channel Page</eng>
+        <loc>PXI-2510 Channel Page</loc>
+      </Name>
+      <GUID>10cc04ef-3542-46d8-a2d9-8d0ca505f877</GUID>
+      <Glyph>
+			<Type>To Application Data Dir</Type>
+			<Path>System Explorer\Glyphs\default fpga channel.png</Path>
+		</Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+		<Path>Custom Devices\PXI-2510\Windows\PXI-2510 Configuration.llb\PXI-2510 Channel Page.vi</Path>
+      </Item2Launch>
+    </Page>
+  </Pages>
+  <CustomXML>
+    <Dummy></Dummy>
+  </CustomXML>
+</CustomDevice>
